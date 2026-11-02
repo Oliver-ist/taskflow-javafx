@@ -1,6 +1,6 @@
 # TaskFlow
 
-[![Build](https://github.com/USERNAME/taskflow-javafx/actions/workflows/build.yml/badge.svg)](https://github.com/USERNAME/taskflow-javafx/actions/workflows/build.yml)
+[![Build](https://github.com/Oliver-ist/taskflow-javafx/actions/workflows/build.yml/badge.svg)](https://github.com/Oliver-ist/taskflow-javafx/actions/workflows/build.yml)
 ![Java 21](https://img.shields.io/badge/Java-21-orange)
 ![JavaFX 21](https://img.shields.io/badge/JavaFX-21-blue)
 ![License MIT](https://img.shields.io/badge/License-MIT-green)
@@ -60,7 +60,7 @@ JavaFX tidak perlu dipasang manual karena diunduh otomatis oleh Maven.
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/USERNAME/taskflow-javafx.git
+git clone https://github.com/Oliver-ist/taskflow-javafx.git
 cd taskflow-javafx
 
 # 2. Jalankan aplikasi
