@@ -10,13 +10,9 @@ Data tugas disimpan otomatis ke file JSON di komputer, sehingga tidak hilang saa
 Project ini cocok sebagai contoh belajar JavaFX yang sedikit lebih lengkap dari "hello world":
 ada tabel, dialog, pencarian, filter, penyimpanan data, tema gelap, dan unit test.
 
-<!--
-Setelah aplikasi dijalankan, ambil screenshot, simpan sebagai docs/screenshot.png,
-lalu hapus tanda komentar pada baris di bawah ini.
-
 ## Tampilan
+
 ![Tampilan TaskFlow](docs/screenshot.png)
--->
 
 ## Fitur
 
