@@ -1,0 +1,110 @@
+/* ===== TaskFlow stylesheet ===== */
+
+.root {
+    -fx-font-family: "Segoe UI", "Helvetica Neue", "Noto Sans", Arial, sans-serif;
+    -fx-font-size: 13px;
+}
+
+/* ---- Toolbar & status bar ---- */
+.toolbar {
+    -fx-padding: 12 16 12 16;
+    -fx-background-color: derive(-fx-base, 4%);
+    -fx-border-color: transparent transparent derive(-fx-base, -12%) transparent;
+}
+
+.statusbar {
+    -fx-background-color: derive(-fx-base, 4%);
+    -fx-border-color: derive(-fx-base, -12%) transparent transparent transparent;
+}
+
+.search-field {
+    -fx-pref-width: 230px;
+}
+
+.button.primary {
+    -fx-background-color: -fx-accent;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+}
+
+.button.primary:hover {
+    -fx-background-color: derive(-fx-accent, -12%);
+}
+
+.label.stats {
+    -fx-font-weight: bold;
+}
+
+.label.muted {
+    -fx-opacity: 0.7;
+}
+
+/* ---- Tabel ---- */
+.table-view {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: derive(-fx-base, -3%);
+}
+
+.table-row-cell {
+    -fx-cell-size: 38px;
+}
+
+/* Prioritas berwarna */
+.table-cell.prio-high   { -fx-text-fill: #d63031; -fx-font-weight: bold; }
+.table-cell.prio-medium { -fx-text-fill: #d68100; -fx-font-weight: bold; }
+.table-cell.prio-low    { -fx-text-fill: #2d9d5b; -fx-font-weight: bold; }
+
+/* Tugas selesai dibuat pudar */
+.table-row-cell.done-row {
+    -fx-opacity: 0.55;
+}
+
+/* Tenggat yang terlewat berwarna merah */
+.table-row-cell.overdue > .table-cell.due-cell {
+    -fx-text-fill: #d63031;
+    -fx-font-weight: bold;
+}
+
+/* Baris terpilih: teks selalu putih supaya terbaca di atas warna seleksi */
+.table-row-cell:selected > .table-cell {
+    -fx-text-fill: white;
+}
+
+.table-row-cell.overdue:selected > .table-cell.due-cell {
+    -fx-text-fill: white;
+}
+
+/* ---- Mode gelap ---- */
+.root.dark {
+    -fx-base: #2b2f36;
+    -fx-background: #23262c;
+    -fx-control-inner-background: #2f333b;
+    -fx-control-inner-background-alt: #343842;
+    -fx-accent: #4c8dff;
+    -fx-focus-color: #4c8dff;
+    -fx-faint-focus-color: #4c8dff33;
+}
+
+.root.dark .toolbar,
+.root.dark .statusbar {
+    -fx-background-color: #2b2f36;
+    -fx-border-color: #3a3f48;
+}
+
+.root.dark .table-cell.prio-high   { -fx-text-fill: #ff6b6b; }
+.root.dark .table-cell.prio-medium { -fx-text-fill: #ffb347; }
+.root.dark .table-cell.prio-low    { -fx-text-fill: #5fd38d; }
+
+.root.dark .table-row-cell.overdue > .table-cell.due-cell {
+    -fx-text-fill: #ff6b6b;
+}
+
+.root.dark .table-row-cell:selected > .table-cell,
+.root.dark .table-row-cell.overdue:selected > .table-cell.due-cell {
+    -fx-text-fill: white;
+}

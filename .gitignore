@@ -1,0 +1,21 @@
+# Build output
+target/
+out/
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+nbproject/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data lokal aplikasi (jika tidak sengaja ikut tersalin ke folder project)
+tasks.json
+tasks.json.tmp
